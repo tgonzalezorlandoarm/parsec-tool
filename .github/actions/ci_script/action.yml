@@ -12,5 +12,5 @@ runs:
         ./target/debug/parsec -c ../tests/test_config.toml &
       shell: bash
     - name: Execute CI script
-      run: ./tests/ci.sh
+      run: python3 tests/ci.py
       shell: bash
