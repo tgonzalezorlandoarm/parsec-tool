@@ -11,7 +11,7 @@ runs:
   steps:
     - name: Install and run Parsec with the Mbed Crypto provider
       run: |
-        git clone https://github.com/parallaxsecond/parsec.git
+        git clone https://github.com/tgonzalezorlandoarm/parsec.git --branch tg/dependency-mismatcher-compare
         cd parsec
         cargo build --features "mbed-crypto-provider"
         ./target/debug/parsec -c ../tests/test_config.toml &
